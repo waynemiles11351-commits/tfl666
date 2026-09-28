@@ -385,7 +385,7 @@ struct GGDPlayerSnapshot {
     Il2CppClass *klass = nullptr;
     NSString *name = nil;
     NSString *role = nil;
-    CGPoint screen = CGPointMake(0, 0)
+    CGPoint screen = CGPointMake(0, 0);
     BOOL hasPosition = NO;
 };
 
@@ -770,7 +770,7 @@ struct GGDPlayerSnapshot {
         }
         if (!role.length) role = @"未知";
 
-        CGPoint point = CGPointMake(0, 0)
+        CGPoint point = CGPointMake(0, 0);
         BOOL hasPosition = [self screenPointForPlayer:player class:klass out:&point];
 
         NSDictionary *snap = @{
