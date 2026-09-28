@@ -819,7 +819,7 @@ struct GGDPlayerSnapshot {
         }
 
         if (!_attached) {
-            if (![_api attach]) {
+            if (!_api.attach()) {
                 _statusLine = @"UnityFramework 已加载 · 等待 IL2CPP Runtime";
                 return;
             }
